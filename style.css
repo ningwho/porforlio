@@ -1,109 +1,124 @@
-
-/*setting border box on all elements inside the grid*/
-* {
-  box-sizing: border-box;
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+color: #2E88A3;
 }
-
-.row:before,
-.row:after {
-      content:"";
-      display: table;
-      clear:both;
-}
-
-
-
-[class*='col-'] {
-      float: left;
-      min-height: 1px;
-      /*gutter*/
-      padding: 12px;
-}
-
-[class*='col-'] {
-        float: left;
-        min-height: 1px;
-        width: 33.33%;
-}
-
-.col-1{
-    width: 33.33%;
-}
-.col-2{
-    width: 66.664%;
-}
-.col-3{
-    width: 100%;
-}
-
-
-body {
-  background: url("img/tea.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Oxygen', sans-serif;
-  color: #2E88A3;
+h1 {
+font-family: 'Oxygen', sans-serif;
+color: #2E88A3;
+font-weight:normal;
+font-size: 55px;
+text-align: center;
+margin-right: 0;
+padding: 0;
 
 }
-
-li {
-  list-style-type: none;
+h2 {
+font-family:"Oxygen";
+font-weight: normal;
+font-size: 40px;
+text-align: center;
+color: #2E88A3;
+margin: 0;
+padding: 0;
+}
+h3 {
+font-family: 'Oxygen';
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+color: #2E88A3;
 }
 
-a{
-  color: #2E88A3;
-  padding-left: 10px;
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; }
+.clear { clear: both; }
+
+
+#header {
+width: 100%;
+background-color: #EDEEF2;
+height: 80px;
+position: fixed;
+margin-top: 30px;
 }
-
-
-.introduction {
-  text-align: center;
-  color: #2E88A3;
-  width: 45%;
-  height: 20%;
-  background-color: #C0CEDE;
-  border-radius: 10px;
-  margin-top: 35%;
-  margin-left: 10%;
+#nav {
+  width: 410px;
   float: right;
-  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+}
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+}
+#nav li{
+margin-top: 9px;
+float: left;
+padding-left: 21px;
+}
+#nav li a { color: #2E88A3; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Oxygen'; }
+#nav li a.active { color: #2E88A3; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #2E88A3; opacity:1; }
 
+.quotes {
+font-family: 'Oxygen', sans-serif;
+font-weight: normal;
+font-size: 30px;
+text-align: left;
+margin: 50px auto;
 }
 
-#contact {
-  background-color: #fff;
-  color: #333333;
-  height: 100%;
-  width: 100%;
-  margin: 0 20% 10px 10%;
-  background-position: center;
-}
 
-.contact {
+.quotes_container {
+  width: 800px;
+  margin: 0 auto;
   text-align: center;
-  color: #2E88A3;
-  font-size: 20px;
-  padding: 5px 5px 5px 5px;
-
-}
-
-.navbar {
-  float: right;
-  padding: 10px 35px;
-  overflow: hidden;
-  margin-right: 0;
-  width: 100%;
-  height: 80px;
 
 }
 
 
-
-.list-group-item {
-  padding-right: 20px;
-  margin-top: 30px;
-  font-size: 18px;
-  text-decoration: none;
-  color: #2E88A3;
-
+#slide1, #slide2{ width: 100%; }
+#slide1{
+background:url('img/tea.jpg') 50% 0 no-repeat fixed;
+color: #2E88A3;
+height: 600px;
+margin: 0;
+padding: 200px 0 260px 0;
+background-size: cover;
+}
+#slide2{
+background-color: #fff;
+color: #2E88A3;
+height: 300px;
+margin: 0 auto;
+overflow: hidden;
+padding: 200px 0;
+}
+#slide3{
+background: #EDEEF2;
+color: #2E88A3;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+#slide4{
+background-color: #fff;
+color: #2E88A3;
+height: 300px;
+padding: 200px 0;
+}
+#slide5{
+background: url('img/cup.jpg') 50% 0 no-repeat fixed;
+height: 200px;
+margin: 0 auto;
+padding: 250px 0;
+color: #2E88A3;
+background-size: cover;
 }
