@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/teacup.png">
 
+
 	<title>testing</title>
 
 	<!-- css  -->
@@ -12,24 +13,26 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 </head>
 
 <body>
 <div class= "wrapper">
 	<!-- nav bar  -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 
 
 <!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
+		<div class="navbar-header" id="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-			<span class="sr-only"> Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+				<span class="sr-only"> Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"> Ning Yuan </a>
+			<a class="navbar-brand" href="#"> Ning-Fei Yuan </a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse-main">
 			<ul class="nav navbar-nav navbar-right">
@@ -39,13 +42,15 @@
 				<li><a href="#contact"><i class="fa fa-user" aria-hidden="true"></i>Contact</a></li>
 			</ul>
 		</div>
+		<!--/.navbar-collapse-->
 	</div>
+	<!-- .container-fluid -->
 	</nav>
 	<!-- home -->
 	<div id= "home" class="home">
 		<div class="panel panel-default">
 			<div class="panel-body lead">
-			<h1>Hello, I'm Ning! I'm a developer in residence at DigitalCrafts</h1>
+			<h1 class="animated zoomInDown">Hello, I'm Ning! I'm a developer in residence at DigitalCrafts</h1>
 		</div>
 		</div>
 	</div>
@@ -69,14 +74,15 @@
 		</div>
 			<div class="col-sm-6 text-center">
 				<h2> Furriendster </h2>
-				<p>Group project where we created an app that locates pet owners around your area and provides nearby dog friendly parks. Users can also chat and create their pet profiles. Built with React/Redux, Express, PostgresSQL, Ajax, html, css, Jquery, and Socket.io. We also used Google maps API and Cloudinary's API. </p>
+				<p>Group project where we created an app that locates pet owners around your area and provides nearby dog friendly parks. Users can also chat and create their pet profiles. Built with React/Redux, Express, PostgresSQL, Ajax, html, CSS, Jquery, and Socket.io. We also used Google maps API and Cloudinary's API. </p>
 			</div>
 		</div>
 	</div>
 
 	<div id="skills" class="pad-section">
 	<h2>Skills</h2>
-	<div class="container">
+
+	<div class="container" id="container">
 		<div class="row text-center">
 			<div class="col-sm-3 col-xs-6">
 			<img src="img/skills/html_logo.png">
@@ -129,9 +135,12 @@
 
 	</footer>
 <!-- scripts -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="jquery.js"></script>
+<script src="script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <script src="https://use.fontawesome.com/c109225e66.js"></script>
+
 </body>
 </div>
 
