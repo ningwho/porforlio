@@ -82,6 +82,7 @@ li {
 	font-size: 20px;
 	height: 100vh;
 
+
 }
 
 
@@ -140,6 +141,7 @@ li {
 .wrapper {
   width: 100%;
   margin: 0 auto;
+
 
 }
 
@@ -257,4 +259,12 @@ li {
   .wrap {
     min-height: calc(100vh - 89px);
   }
+}
+
+
+/*iphone5 and iphone6*/
+@media(max-width: 412px){
+	.wrapper{
+		overflow: hidden;
+	}
 }
