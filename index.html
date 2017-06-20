@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="img/teacup.png">
 
 
-	<title>testing</title>
+	<title>Ning Yuan</title>
 
 	<!-- css  -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -32,14 +32,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"> Ning-Fei Yuan </a>
+			<a class="navbar-brand" href="#home"> Ning-Fei Yuan </a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse-main">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home"><i class="fa fa-home fa-fw"></i>Home</a></li>
+				<li><a href="#about"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i>About Me</a></li>
 				<li><a href="#projects"><i class="fa fa-book fa-fw" aria-hidden="true"></i>Projects</a></li>
 				<li><a href="#skills"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Skills</a></li>
-				<li><a href="#contact"><i class="fa fa-user" aria-hidden="true"></i>Contact</a></li>
+				<li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
 			</ul>
 		</div>
 		<!--/.navbar-collapse-->
@@ -50,33 +50,55 @@
 	<div id= "home" class="home">
 		<div class="panel panel-default">
 			<div class="panel-body lead">
-			<h1 class="animated zoomInDown">Hello, I'm Ning! I'm a developer in residence at DigitalCrafts</h1>
+			<h1 class="animated zoomInDown">Hello, I'm Ning! </h1><br/>
+			<h2 class="animated zoomInDown">I'm a Full-Stack Developer</h2>
+
 		</div>
 		</div>
 	</div>
 	<!-- about -->
+	<div id="about" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-center">
+					<p>I'm a recent graduate of DigitalCrafts 16-week immersive bootcamp. Looking for opportunities as a full-stack web developer to expand my skillset and to continue to learn new things. </p> <br/>
+					<p>In my free time I enjoy grabbing some tea with friends, exploring fleamarkets or walking the beltline.</p>
+				</div>
+				<div class="col-sm-6">
+					<img src="img/cup.jpg" width="500px">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- projects -->
 
 	<div id="projects" class="pad-section">
 		<h1> Projects </h1>
 		<div class="container">
 		<div class ="row">
 			<div class="col-sm-6">
-			<a href="http://wheelgame.debramaelee.com"><img src="img/hamster.png" width="300px"></a>
+			<a href="http://wheelgame.debramaelee.com"><img src="img/hamster.png" width="350px"></a>
 			</div>
 		<div class="col-sm-6 text-center">
 			<h2> Hamster Wheel </h2>
 			<p>This game lets the user play as a jumping hamster to avoid randomly generated obstacles spinning in a wheel. After reaching 200 points, blocks from the opposite direction are generated as well, making the game much more challenging. The hamster is able to jump on or over the blocks safely, but when the hamster hits a block, it's game over. Once that happens, the player's score is appended to a PostgreSQL database, which is used to display the top 10 high scores on the leaderboard. The database stores all the user's usernames, passwords (which are encrypted using bcrypt), and high scores</p>
 		</div>
 		</div>
-
+		<div class="row">
 		<div class="col-sm-6">
-		<a href="http://furriendster.debramaelee.com/#/"><img src="img/furriendster.png" width="400px"></a>
+			<a href="http://furriendster.debramaelee.com/#/"><img src="img/furriendster.png" width="400px"></a>
 		</div>
+
 			<div class="col-sm-6 text-center">
 				<h2> Furriendster </h2>
 				<p>Group project where we created an app that locates pet owners around your area and provides nearby dog friendly parks. Users can also chat and create their pet profiles. Built with React/Redux, Express, PostgresSQL, Ajax, html, CSS, Jquery, and Socket.io. We also used Google maps API and Cloudinary's API. </p>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<div id="skills" class="pad-section">
@@ -127,7 +149,10 @@
 	</div>
 	</div>
 	<footer class="main-footer" id="contact">
-		<h3>Have a question? Want to get into touch or grab coffee or tea together?</h3><br>
+		<div id="contactheader">
+		<h3>Contact</h3>
+		</div>
+		<p>Have a question? Feel free to get in touch and maybe we can grab some coffee or tea together.</p>
 		  <a href="https://github.com/ningwho"><i class="fa fa-github fa-3x"></i></a>
 		  <a href="https://www.linkedin.com/in/ning-yuan-51437543/"><i class="fa fa-linkedin fa-3x"></i></a>
 		  <a href="mailto:nfyuan@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
