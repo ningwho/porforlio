@@ -52,7 +52,6 @@
 			<div class="panel-body lead">
 			<h1 class="animated zoomInDown">Hello, I'm Ning! </h1><br/>
 			<h2 class="animated zoomInDown">I'm a Full-Stack Developer</h2>
-
 		</div>
 		</div>
 	</div>
@@ -61,10 +60,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 text-center">
-					<p>I'm a recent graduate of DigitalCrafts 16-week immersive bootcamp. Looking for opportunities as a full-stack web developer to expand my skillset and to continue to learn new things. </p> <br/>
+					<p>I'm a recent graduate of DigitalCrafts 16-week immersive bootcamp. Looking for opportunities as a full-stack web developer to expand my skillset and to continue to learn new things. </p>
+
 					<p>In my free time I enjoy grabbing some tea with friends, exploring fleamarkets or walking the beltline.</p>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="cup">
 					<img src="img/cup.jpg" width="400px">
 
 				</div>
@@ -81,14 +81,20 @@
 		<div class="container">
 		<div class ="row">
 			<div class="col-sm-6">
-			<a href="http://wheelgame.debramaelee.com"><img src="img/hamster.png" width="350px"></a>
+				<div class="hamster">
+					<a href="http://wheelgame.debramaelee.com"><img src="img/hamster.png" width="350px"></a>
+				</div>
 			</div>
+
 		<div class="col-sm-6 text-center">
 			<h2> Hamster Wheel </h2>
 			<p>This game lets the user play as a jumping hamster to avoid randomly generated obstacles spinning in a wheel. After reaching 200 points, blocks from the opposite direction are generated as well, making the game much more challenging. The hamster is able to jump on or over the blocks safely, but when the hamster hits a block, it's game over. Once that happens, the player's score is appended to a PostgreSQL database, which is used to display the top 10 high scores on the leaderboard. The database stores all the user's usernames, passwords (which are encrypted using bcrypt), and high scores</p>
+			<a href="https://github.com/HamsterCorp/hamster-wheel" target="_blank"><button class="btn btn-info">Github</button></a>
+			<a href="http://wheelgame.debramaelee.com"><button class="btn btn-info">Demo</button></a>
 		</div>
 		</div>
-		<div class="row">
+		<div class="row" id="fur">
+
 		<div class="col-sm-6">
 			<a href="http://furriendster.debramaelee.com/#/"><img src="img/furriendster.png" width="400px"></a>
 		</div>
@@ -96,6 +102,8 @@
 			<div class="col-sm-6 text-center">
 				<h2> Furriendster </h2>
 				<p>Group project where we created an app that locates pet owners around your area and provides nearby dog friendly parks. Users can also chat and create their pet profiles. Built with React/Redux, Express, PostgresSQL, Ajax, html, CSS, Jquery, and Socket.io. We also used Google maps API and Cloudinary's API. </p>
+				<a href="https://github.com/debramaelee/furriendster" target="_blank"><button class="btn btn-info">Github</button></a>
+				<a href="http://furriendster.debramaelee.com/#/"><button class="btn btn-info">Demo</button></a>
 			</div>
 		</div>
 	</div>
