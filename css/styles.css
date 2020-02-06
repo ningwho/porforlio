@@ -1,0 +1,224 @@
+    
+/* =================================
+  Base Element Styles
+==================================== */
+
+body {
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;  
+    color: #0162d7;  
+}
+
+p {
+    color: #516265; 
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0 0 .5px 0;
+}
+
+a {
+
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    border-bottom: 5px solid #00c4ed;
+    line-height: 3;
+    margin: 45px;
+    color: #4a96e7;
+}
+
+
+
+a:hover {
+    border-bottom: 5px solid #FF0DD1;
+    transition: all 0.2s ease-in;
+    border-width: 100%;
+}
+
+
+
+.container {    
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 650px;   
+}
+
+
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header-frame{
+    max-width: 350px;  
+}
+
+.name {
+    margin: 0;
+}
+
+.teacup-frame{
+    position:relative;
+    width: 300px;
+    height: 150px;
+    margin: 0 0 10px 0;
+}
+
+.teapot {
+    position: absolute;
+    height: 80%;
+    transform: rotate(35deg);
+    bottom: 35%;   
+}
+
+.teacup{
+    position: absolute;
+    left: 50%;
+    height: 30%;
+    bottom: 5%;
+}
+.skills {
+    margin: 75px 75px 75px 130px;
+}
+
+
+/* animation */
+
+h4 span:before {
+    color: #3c1503;
+    content: 'JavaScript';
+    -webkit-animation: animate 20s;
+    -moz-animation: animate 20s;
+    -o-animation: animate 20s;
+    -ms-animation: animate 20s;
+    animation: animate 20s;
+}
+@keyframes animate {
+    0% {
+        content: 'JavaScript';
+    }
+    5% {
+        content: 'JavaScript';
+    }
+    13.5% {
+        content: 'React';
+    }
+    27% {
+        content: 'Node.js';
+    }
+    40.5% {
+        content: 'Express.js';
+    }
+    67.5% {
+        content: 'PostgreSQL';
+    }
+    81% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'CSS3';
+    }
+}
+@-webkit-keyframes animate {
+    0% {
+        content: 'JavaScript';
+    }
+    13.5% {
+        content: 'React';
+    }
+    27% {
+        content: 'Node.js';
+    }
+    40.5% {
+        content: 'Express.js';
+    }
+    67.5% {
+        content: 'PostgreSQL';
+    }
+    81% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'CSS3';
+    }
+}
+@-moz-keyframes animate {
+    0% {
+        content: 'JavaScript';
+    }
+    13.5% {
+        content: 'React';
+    }
+    27% {
+        content: 'Node.js';
+    }
+    40.5% {
+        content: 'Express.js';
+    }
+    67.5% {
+        content: 'PostgreSQL';
+    }
+    81% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'CSS3';
+    }
+}
+
+@-ms-keyframes animate {
+    0% {
+        content: 'JavaScript';
+    }
+    13.5% {
+        content: 'React';
+    }
+    27% {
+        content: 'Node.js';
+    }
+    40.5% {
+        content: 'Express.js';
+    }
+    67.5% {
+        content: 'PostgreSQL';
+    }
+    81% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'CSS3';
+    }
+}
+
+@-o-keyframes animate {
+    0% {
+        content: 'JavaScript';
+    }
+    13.5% {
+        content: 'React';
+    }
+    27% {
+        content: 'Node.js';
+    }
+    40.5% {
+        content: 'Express.js';
+    }
+    67.5% {
+        content: 'PostgreSQL';
+    }
+    81% {
+        content: 'HTML5';
+    }
+    100% {
+        content: 'CSS3';
+    }
+}

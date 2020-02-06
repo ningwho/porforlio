@@ -1,178 +1,56 @@
 <!DOCTYPE html>
-<html>
 
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/teacup.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <link rel="shortcut icon" href="images/teacup.png">
 
+  <title>Ning Yuan</title>
 
-	<title>Ning Yuan</title>
-
-	<!-- css  -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!--CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylsheet">
+  <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
 
 </head>
 
 <body>
-<div class= "wrapper">
-	<!-- nav bar  -->
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
+  <div class="container">
+    <div class="header-section">
+      <div class="header-frame">
+        <h1 class="name">Ning Yuan</h1>
+        <h2>Software Engineer</h2>
+        <p>I enjoy learning new technologies and creating intuitive digital experiences that make life experiences simple. 
+          Always looking to expand my skillset and to continue to learn new things.</p>     
+      </div>
+      <div class="teacup-frame"> 
+        <h4 class="skills">
+          <span></span>
+        </h4>        
+        <!-- <object class="teapot" data="images/teapot.svg" type="image/svg+xml"></object>
+        <object class="teacup" data="images/teacup.svg" type="image/svg+xml"></object> -->
+        <img class="teapot" src="images/teapot.svg" alt="teapot">
+        <img class="teacup" src="images/teacup.svg" alt="teacup">
+        
+      </div>
+    </div>
+    <div class="main-footer">
+      <div id="contactheader">
+        <h2>Contact</h2>
+      </div>
+        <p>Have a question? Feel free to get in touch.</p>
+      <div class="contact">
+        <a href="mailto:nfyuan@gmail.com">email</a>
+        <a href="https://github.com/ningwho">github</a>
+        <a href="https://www.linkedin.com/in/ning-yuan-51437543/">linkedin</a>                    
+      </div>      
+      </div>
+    </div>
+  </div>
+  <script src="https://use.fontawesome.com/778f365507.js"></script>
 
-
-<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header" id="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-				<span class="sr-only"> Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#home"> Ning-Fei Yuan </a>
-		</div>
-		<div class="collapse navbar-collapse" id="navbar-collapse-main">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#about"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i>About Me</a></li>
-				<li><a href="#projects"><i class="fa fa-book fa-fw" aria-hidden="true"></i>Projects</a></li>
-				<li><a href="#skills"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Skills</a></li>
-				<li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
-			</ul>
-		</div>
-		<!--/.navbar-collapse-->
-	</div>
-	<!-- .container-fluid -->
-	</nav>
-	<!-- home -->
-	<div id= "home" class="home">
-		<div class="panel panel-default">
-			<div class="panel-body lead">
-			<h1 class="animated zoomInDown">Hello, I'm Ning! </h1><br/>
-			<h2 class="animated zoomInDown">I'm a Full-Stack Developer</h2>
-		</div>
-		</div>
-	</div>
-	<!-- about -->
-	<div id="about" class="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 text-center">
-					<p>I'm a Developer at Codesigned after attending DigitalCrafts an immersive web bootcamp to learn full stack development. I enjoy learning new technologies and creating intuitive digital experiences that make life experiences simple. Always looking to expand my skillset and to continue to learn new things. </p>
-
-					<p>In my free time I enjoy grabbing some tea with friends, exploring fleamarkets or walking the beltline.</p>
-				</div>
-				<div class="col-sm-6" id="cup">
-					<img src="img/cup.jpg" width="400px">
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<!-- projects -->
-
-	<div id="projects" class="pad-section">
-		<h1> Projects </h1>
-		<div class="container">
-		<div class ="row">
-			<div class="col-sm-6">
-				<div class="hamster">
-					<img src="img/hamster.png" width="350px"></a>
-				</div>
-			</div>
-
-		<div class="col-sm-6 text-center">
-			<h2> Hamster Wheel </h2>
-			<p>This game lets the user play as a jumping hamster to avoid randomly generated obstacles spinning in a wheel. After reaching 200 points, blocks from the opposite direction are generated as well, making the game much more challenging. The hamster is able to jump on or over the blocks safely, but when the hamster hits a block, it's game over. Once that happens, the player's score is appended to a PostgreSQL database, which is used to display the top 10 high scores on the leaderboard. The database stores all the user's usernames, passwords (which are encrypted using bcrypt), and high scores</p>
-			<a href="https://github.com/HamsterCorp/hamster-wheel" target="_blank"></a><button class="btn btn-info">Github</button></a>
-		</div>
-		</div>
-		<div class="row" id="fur">
-
-		<div class="col-sm-6">
-			<img src="img/furriendster.png" width="400px"></a>
-		</div>
-
-			<div class="col-sm-6 text-center">
-				<h2> Furriendster </h2>
-				<p>Group project where we created an app that locates pet owners around your area and provides nearby dog friendly parks. Users can also chat and create their pet profiles. Built with React/Redux, Express, PostgreSQL, Ajax, html, CSS, Jquery, and Socket.io. We also used Google maps API and Cloudinary's API. </p>
-				<a href="https://github.com/debramaelee/furriendster" target="_blank"><button class="btn btn-info">Github</button></a>
-			</div>
-		</div>
-	</div>
-	</div>
-
-	<div id="skills" class="pad-section">
-	<h2>Skills</h2>
-
-	<div class="container" id="container">
-		<div class="row text-center">
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/HTML_Logo.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/js4560_450.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/nodejs-logo.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/jquery-icon.png">
-			</div>
-		<div>
-		<div class="row text-center">
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/sql.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/css.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/socketio.png" >
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/react.png" width="100px">
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/python.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/redux.png">
-			</div>
-			<div class="col-sm-3 col-xs-6">
-			<img src="img/skills/ajax.png">
-			</div>
-		</div>
-		</div>
-	</div>
-	</div>
-	</div>
-	<footer class="main-footer" id="contact">
-		<div id="contactheader">
-		<h3>Contact</h3>
-		</div>
-		<p>Have a question? Feel free to get in touch and maybe we can grab some coffee or tea together.</p>
-		  <a href="https://github.com/ningwho"><i class="fa fa-github fa-3x"></i></a>
-		  <a href="https://www.linkedin.com/in/ning-yuan-51437543/"><i class="fa fa-linkedin fa-3x"></i></a>
-		  <a href="mailto:nfyuan@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
-			<a href="Yuan_resume.pdf" target="_blank"><i class="fa fa-file-text-o fa-3x"></i></a>
-
-	</footer>
-<!-- scripts -->
-<script src="jquery.js"></script>
-<script src="script.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="https://use.fontawesome.com/c109225e66.js"></script>
-
+ 
 </body>
-</div>
-
 </html>
